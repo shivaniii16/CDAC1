@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #333; /* Dark text for header */
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 0.9em; /* Smaller font for contact info */
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 10px; /* Padding inside sections */
+}
+
+h2 {
+    color: #007BFF; /* Blue color for section titles */
+    border-bottom: 1px solid #007BFF; /* Underline for section titles */
+    padding-bottom: 5px; /* Space below section titles */
+}
+
+.job, .degree {
+    margin-bottom: 10px; /* Space between job/degree entries */
+}
+
+h3 {
+    margin: 5px 0; /* Margin for job/degree titles */
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px; /* Indentation for lists */
+}
+
+ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
