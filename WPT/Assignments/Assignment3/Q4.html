@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Bold Word on Mouse Over</title>
+    <style>
+        .highlight {
+            background-color: yellow;  /* Highlight color */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Highlight Bold Word Example</h2>
+    <p>
+        We have just started this section for the users (beginner to intermediate) who 
+want to work with various JavaScript problems and write scripts online to test 
+their JavaScript skill.
+
+<p>On mouse over here <a href="#" id="link1">bold words</a> of the following paragraph will be 
+    highlighted.</p>
+    
+    <p id="para1">have just started 
+    section for the users (
+    intermediate) who 
+    to work with
+    and write scripts online to
+    their JavaScript
+    JavaScript
+    to</p>
+    
+    </p>
+    <a href="#" id="highlightLink">Hover over this link</a>
+
+    <script>
+        const highlightedWord = document.getElementById('highlightedWord');
+        const highlightLink = document.getElementById('highlightLink');
+
+        // Function to highlight the bold word
+        function highlight() {
+            highlightedWord.classList.add('highlight');
+        }
+
+        // Function to remove the highlight
+        function removeHighlight() {
+            highlightedWord.classList.remove('highlight');
+        }
+
+        // Adding event listeners for mouse over and mouse out
+        highlightLink.addEventListener('mouseover', highlight);
+        highlightLink.addEventListener('mouseout', removeHighlight);
+    </script>
+
+</body>
+</html>

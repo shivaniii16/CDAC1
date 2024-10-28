@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+    <form id="userForm" onsubmit="return submitForm(event)">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            // Get values from the form
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const contact = document.getElementById('contact').value;
+
+            // Display values on the webpage
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `
+                <h3>Submitted Information:</h3>
+                <p><strong>First Name:</strong> ${firstName}</p>
+                <p><strong>Last Name:</strong> ${lastName}</p>
+                <p><strong>Email ID:</strong> ${email}</p>
+                <p><strong>Contact Number:</strong> ${contact}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
