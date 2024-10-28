@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title style="display: flex;">WOW Events</title>
+    <style>
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            margin-top: 20px; /* Space above the gallery */
+        }
+
+        .image-gallery img {
+            width: 30%; /* Adjust width as needed */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+    <style>
+        .image-gallery {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: center;      /* Center the images horizontally */
+    gap: 20px;                   /* Space between images */
+    margin-top: 10px;            /* Space above the gallery */
+}
+
+.image-gallery img {
+    width: 30%;                  /* Set width of each image */
+    border-radius: 8px;         /* Rounded corners for images */
+    object-fit: cover;           /* Ensures images cover their container */
+    transition: transform 0.3s;  /* Smooth scale transition on hover */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);      /* Slightly enlarge image on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>WOW Events</h1>
+        <p>Welcome to WOW Events, where we specialize in creating unforgettable events! Whether you’re planning a wedding, corporate function, or a special celebration, our experienced team is here to help you every step of the way. From selecting the perfect venue to managing all the details, we ensure your event runs smoothly and exceeds your expectations. Let us turn your vision into reality!</p>
+
+        <div class="image-gallery">
+            <img src="event.png" alt="Event Planning">
+            <img src="wedding.png" alt="Corporate Event">
+            <img src="corporate.png" alt="Wedding Ceremony">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
